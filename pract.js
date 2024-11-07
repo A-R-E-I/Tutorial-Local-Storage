@@ -7,5 +7,11 @@ function addListener()
 
 function UseLocal()
 {
-	localStorage.
+	localStorage.clear();
+	fname = document.getElementById("txtfname").value;
+	localStorage.setItem("firstname", fname);
+	lname = document.getElementById("txtlname").value;
+	localStorage.setItem("lastname", lname);
+	
+	window.location.href = "practanswer.html";
 }
